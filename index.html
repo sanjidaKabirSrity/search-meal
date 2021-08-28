@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal DB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body style="background-color: rgba(235, 235, 225, 0.801);">
+    <main class="container">
+        <h1 class="text-center text-warning my-4">Search Your Favourite Food</h1>
+
+        <!-- Meal search area -->
+        <div class="input-group mb-3 w-50 mx-auto shadow-sm">
+            <input id="search-input" type="text" class="form-control" placeholder="food name"
+                aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button onclick="searchFood()" class="btn btn-outline-secondary bg-warning text-white" type="button"
+                id="button-addon2">Search</button>
+        </div>
+        <div>
+            <p id="error-msg" class=" text-danger text-center">Something went wrong . Please try again.</p>
+        </div>
+
+        <!-- Meal  details  -->
+        <div id="meal-details" class="my-4 mx-auto" style="max-width: 80%;"></div>
+
+        <!-- Meal search result -->
+        <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4">
+        </div>
+    </main>
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
